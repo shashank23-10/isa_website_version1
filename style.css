@@ -38,16 +38,19 @@
 }
 
 body {
-  background-color: red;
+  background-color: var(--color-black);
 }
 
 /* HEADER */
 .header {
   background-color: var(--color-menus);
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .header .menu-bar {
-  color: azure;
-  position: sticky;
+  color: var(--color-white);
   padding: 1rem;
   display: flex;
 }
@@ -64,29 +67,117 @@ body {
   margin-top: 1.35%;
 }
 /* MENU BAR LINKS  */
+.header .menu-bar .links {
+  margin-top: 0.8%;
+  margin-left: -30%;
+}
+.header .menu-bar .links a {
+  padding-right: 2.5rem;
+  text-decoration: none;
+  color: var(--color-white);
+}
+.header .menu-bar .links a:hover {
+  text-decoration: underline;
+  transition-delay: 1s;
+}
 
 /* DARK-MODE */
 
-/* ABOUT */
-
-/* FEATURES */
-
 /* FOOTER */
 footer {
-  background-color: green;
+  background-color: var(--color-menus);
   padding: 2rem;
+}
+.footer-up {
+  display: flex;
+}
+/* FOOTER LOGO */
+.footer .logo img {
+  width: 20%;
+}
+
+/* FOOTER LIST */
+.footer-up ul{
+list-style: none;
 }
 
 /* FOOTER LINKS */
+.footer .address{
+  margin-left: -25rem;
+  margin-right: 10rem;
+}
+.footer .address p{
+  color: var(--color-white);
+}
+
+/* FOOTER LINKS */
+.footer .links{
+  margin-right: 10rem;
+}
+.footer .links a{
+  color: var(--color-white);
+  text-decoration: none;
+}
 
 /* SOCIALS */
+.footer .socials{
+  margin-right: 10rem;
+}
+.footer .socials a{
+  color: var(--color-white);
+  text-decoration: none;
+}
+.footer .socials i{
+  width: 10%;
+  margin-right: 1rem;
+}
 
 /*  HR TAG AND COPYRIGHT*/
 hr {
   margin: 1rem 0rem;
 }
 .copyright {
+  color: var(--color-white);
   text-align: center;
 }
 
 /* BACK TO TOP */
+
+/*--------------------------------------------------------------------- HOME PAGE -----------------------------------------------------------------  */
+.recruitments {
+  color: var(--color-white);
+  margin: 2rem 0rem;
+}
+.recruitments h1 {
+  text-align: center;
+}
+.recruitments p {
+  margin: 0% 20%;
+  text-align: center;
+}
+.recruitments a {
+  margin-left: 46%;
+}
+.recruitments button {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.membership {
+  color: var(--color-white);
+  margin: 2rem 0rem;
+}
+.membership h1 {
+  text-align: center;
+}
+.membership p {
+  margin: 0% 20%;
+  text-align: center;
+}
+.membership a {
+  margin-left: 46%;
+}
+.membership button {
+  padding: 1rem;
+  border-radius: 2rem;
+}
+*--------------------------------------------------------------------- HOME PAGE -----------------------------------------------------------------  */ ;
