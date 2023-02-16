@@ -10,6 +10,7 @@
   --color-secondary: #e0ba4f;
   --color-menus: #142b57;
   --color-body: black;
+  --color-gradient: #6282a6;
   --color-hover: #e3c285;
   --color-white: #ffffff;
   --color-black: #000;
@@ -44,6 +45,14 @@ body {
   background-color: var(--color-body);
 }
 
+h1 {
+  font-family: "Abel", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: none;
+}
+
 /* HEADER */
 .header {
   background-color: var(--color-menus);
@@ -54,6 +63,7 @@ body {
 }
 .header .menu-bar {
   color: var(--color-white);
+  font-family: "Martel Sans", sans-serif;
   padding: 1rem;
   display: flex;
 }
@@ -67,11 +77,11 @@ body {
   padding-right: 1rem;
 }
 .header .menu-bar .logo p {
-  margin-top: 1.35%;
+  margin-top: 1%;
 }
 /* MENU BAR LINKS  */
 .header .menu-bar .links {
-  margin-top: 0.8%;
+  margin-top: 0.5%;
   margin-left: -30%;
   margin-right: 22.5%;
 }
@@ -90,22 +100,23 @@ body {
   font-size: 1rem;
   border: none;
   outline: none;
-  background-color: var(--color-secondary);
+  background-color: var(--color-gradient);
   color: white;
   cursor: pointer;
-  margin-top: 0.4%;
+  margin-top: 0.5%;
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 50%;
 }
 .dark-mode:hover {
-  background-color: #555;
+  background-color: var(--color-black);
 }
 
 /* FOOTER */
 footer {
   background-color: var(--color-menus);
   padding: 2rem;
+  font-family: "Martel Sans", sans-serif;
 }
 .footer-up {
   display: flex;
@@ -170,7 +181,7 @@ hr {
   font-size: 1rem;
   border: none;
   outline: none;
-  background-color: var(--color-secondary);
+  background-color: var(--color-gradient);
   color: white;
   cursor: pointer;
   padding: 1rem;
@@ -180,60 +191,124 @@ hr {
   border-radius: 50%;
 }
 #myBtn:hover {
-  background-color: #555;
+  background-color: var(--color-black);
 }
 
 /*--------------------------------------------------------------------- HOME PAGE -----------------------------------------------------------------  */
+.open {
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  display: flex;
+}
+.open img {
+  height: 32rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.open .text {
+  margin-top: 12%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+.open .text h1 {
+  font-size: 4rem;
+  margin: 0 12rem;
+}
+.open .text i {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 1rem;
+}
 .recruitments {
-  color: var(--color-white);
-  margin: 2rem 0rem;
+  margin: 20rem 0rem 4rem 0rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .recruitments h1 {
+  color: var(--color-white);
   text-align: center;
+  margin-bottom: 2rem;
 }
 .recruitments p {
+  color: var(--color-white);
   margin: 0% 20%;
   text-align: center;
-}
-.recruitments a {
-  margin-left: 46%;
+  font-family: "Abel", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
 }
 .recruitments button {
   padding: 1rem;
   border-radius: 2rem;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--color-menus);
+  color: var(--color-white);
+}
+.recruitments button:hover {
+  background-color: var(--color-gradient);
 }
 .membership {
   color: var(--color-white);
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .membership h1 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 .membership p {
   margin: 0% 20%;
   text-align: center;
-}
-.membership a {
-  margin-left: 46%;
+  margin-bottom: 2rem;
+  font-family: "Abel", sans-serif;
+  font-size: 2.25rem;
 }
 .membership button {
   padding: 1rem;
   border-radius: 2rem;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--color-menus);
+  color: var(--color-white);
 }
-/*--------------------------------------------------------------------- HOME PAGE -----------------------------------------------------------------  */
+.membership button:hover {
+  background-color: var(--color-gradient);
+}
+/*--------------------------------------------------------------------- ABOUT PAGE -----------------------------------------------------------------  */
 .about {
   margin: 2rem 20%;
   color: var(--color-white);
 }
 .about h1 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 .about p {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Martel Sans", sans-serif;
+  line-height: 120%;
 }
 .about ul {
-  margin-top: -1rem;
+  margin-top: -2rem;
   margin-left: 1rem;
+  font-family: "Martel Sans", sans-serif;
+  line-height: 110%;
+}
+.about img {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 /*--------------------------------------------------------------------- TEAM PAGE -----------------------------------------------------------------  */
 .board-members {
@@ -242,10 +317,13 @@ hr {
 }
 .board-members h1 {
   text-align: center;
+  font-size: 2.25rem;
   margin-bottom: 2rem;
 }
 .board-members p {
   text-align: center;
+  font-family: "Martel Sans", sans-serif;
+  line-height: 120%;
 }
 .board-members .row {
   display: grid;
@@ -255,7 +333,7 @@ hr {
 .board-members .row img {
   width: 18rem;
   height: 15rem;
-  border-bottom: 8px solid var(--color-secondary);
+  border-bottom: 0.5rem solid var(--color-gradient);
 }
 .board-members .col {
   position: relative;
@@ -265,9 +343,52 @@ hr {
   margin-right: 2rem;
   padding: 0 0 0.5rem 0;
 }
+/*--------------------------------------------------------------------- CONTACR PAGE -----------------------------------------------------------------  */
+.contact {
+  display: flex;
+  color: white;
+  margin: 4rem 12.5%;
+}
+.connect .box {
+  margin-left: 2rem;
+  background-color: var(--color-menus);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 21rem;
+  line-height: 150%;
+}
+.connect .box .button button {
+  padding: 1rem;
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.connect p {
+  color: var(--color-white);
+  font-family: "Martel Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.connect .name-heading {
+  color: var(--color-white);
+  font-family: "Martel Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.connect .name {
+  margin-left: 2rem;
+  color: var(--color-white);
+  font-family: "Martel Sans", sans-serif;
+  font-size: 1rem;
+}
+.map {
+  margin-left: 4rem;
+  width: 50%;
+}
 /*--------------------------------------------------------------------- GALLERY PAGE -----------------------------------------------------------------  */
 .gallery {
-  margin: 2rem 12.5%;
+  margin: 2rem 8rem;
   color: var(--color-white);
 }
 .three-in-a-row .row {
@@ -283,8 +404,10 @@ hr {
 .three-in-a-row .row img {
   width: 18rem;
   height: 15rem;
+  border: 0.5rem solid var(--color-gradient);
 }
 .two-in-a-row .row img {
   width: 27.5rem;
   height: 15rem;
+  border: 0.5rem solid var(--color-gradient);
 }
