@@ -27,7 +27,7 @@
 .light-mode {
   --color-primary: #f7fbf3;
   --color-secondary: #6685f5;
-  --color-menus: #afbfd2;
+  --color-menus: #6282a5;
   --color-body: #ffffff;
   --color-hover: #3f68fe;
   --color-white: #454e56;
@@ -66,6 +66,7 @@ a {
   font-family: "Martel Sans", sans-serif;
   padding: 1rem;
   display: flex;
+  position: relative;
 }
 .header .menu-bar .logo a {
   display: flex;
@@ -85,6 +86,10 @@ a {
   margin-left: -30%;
   margin-right: 22.5%;
 }
+.header .menu-bar .links-toggle {
+  display: none;
+}
+
 .header .menu-bar .links a {
   padding-right: 2.5rem;
   text-decoration: none;
@@ -117,6 +122,8 @@ footer {
   background-color: var(--color-menus);
   padding: 2rem;
   font-family: "Martel Sans", sans-serif;
+  justify-content: space-evenly;
+  overflow: hidden;
 }
 .footer-up {
   display: flex;
@@ -138,6 +145,11 @@ footer {
 }
 .footer .address p {
   color: var(--color-white);
+}
+.footer .address p:hover {
+  transform: translateX(2rem);
+  transition-delay: 0.2s;
+  cursor: pointer;
 }
 
 /* FOOTER LINKS */
@@ -176,7 +188,7 @@ hr {
   display: none;
   position: fixed;
   bottom: 1.25rem;
-  right: 30px;
+  right: 2rem;
   z-index: 2;
   font-size: 1rem;
   border: none;
@@ -334,6 +346,7 @@ hr {
   width: 18rem;
   height: 15rem;
   border-bottom: 0.5rem solid var(--color-gradient);
+  border-radius: 1rem;
 }
 .board-members .col {
   position: relative;
@@ -343,11 +356,59 @@ hr {
   margin-right: 2rem;
   padding: 0 0 0.5rem 0;
 }
+.board-members .col .hover-items {
+  width: 100%;
+  height: 83%;
+  background-color: var(--color-gradient);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+.board-members .col:hover .hover-items {
+  opacity: 0.8;
+  transform: scale(1);
+}
+.board-members .col .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board-members .col .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.board-members .col .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+.board-members .col .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+.board-members .col .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
+}
 /*--------------------------------------------------------------------- CONTACR PAGE -----------------------------------------------------------------  */
 .contact {
   display: flex;
   color: white;
-  margin: 4rem 12.5%;
+  margin: 6rem 12.5%;
 }
 .connect .box {
   margin-left: 2rem;
@@ -359,6 +420,7 @@ hr {
   justify-content: center;
   max-width: 21rem;
   line-height: 150%;
+  margin-bottom: 2rem;
 }
 .connect .box .button button {
   padding: 1rem;
