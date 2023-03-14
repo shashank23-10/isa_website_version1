@@ -10,6 +10,7 @@
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
 
     <!-- GOOGLE FONT SYLES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,16 +49,19 @@
 
         <!-- LINKS -->
         <div class="links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="team.html">Team</a>
-          <a href="contact.html">Contact</a>
-          <a href="gallery.html">Gallery</a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html"></a>Blog</li>
+          </ul>
         </div>
 
         <!-- DARK MODE -->
         <div class="dark-mode">
-          <button class="dark-mode">
+          <button class="dark-mode" onclick="darkmode()">
             <i class="fa-solid fa-moon"></i>
           </button>
         </div>
@@ -74,16 +78,46 @@
               <img src="images/president.webp" alt="President" />
               <p>President</p>
               <p>Shreyansh Goyal</p>
+              <div class="hover-items">
+                <div class="icons">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="col">
               <img src="images/sec.webp" alt="Secretary" />
               <p>Secretary</p>
               <p>Praneet Dighe</p>
+              <div class="hover-items">
+                <div class="icons">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="col">
               <img src="images/treasurer.webp" alt="Treasurer" />
               <p>Treasurer</p>
               <p>Geda Siva Ram</p>
+              <div class="hover-items">
+                <div class="icons">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -94,6 +128,16 @@
               <img src="images/ai-head.webp" alt="AI Head" />
               <p>AI Head</p>
               <p>George Paulson</p>
+              <div class="hover-items">
+                <div class="icons">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="col">
               <img
@@ -102,11 +146,31 @@
               />
               <p>Mechatronics Head</p>
               <p>Aiman Bayezeed</p>
+              <div class="hover-items">
+                <div class="icons">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="col">
               <img src="images/management-head.webp" alt="Management Head" />
               <p>Management Head</p>
               <p>Arpit Baj</p>
+              <div class="hover-items">
+                <div class="icons">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" target="_blank" class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -122,7 +186,7 @@
     <footer class="footer">
       <div class="footer-up">
         <div class="logo">
-          <a href="index.html" target="_blank">
+          <a href="index.html">
             <img src="images/isa logo.png" alt="ISA logo" />
           </a>
         </div>
